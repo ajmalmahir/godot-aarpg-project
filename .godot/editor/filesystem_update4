@@ -1,8 +1,2 @@
 res://Player/player.tscn
-res://Player/Scripts/state_attack.gd
-res://playground.tscn
-res://Tile Maps/grass-01.tscn
-res://GeneralNodes/HitBox/hit_box.tscn
-res://GeneralNodes/HurtBox/hurt_box.tscn
-res://Props/Plants/Plant.tscn
-res://Player/Scripts/player.gd
+res://Player/Scripts/PlayerCamera.gd
