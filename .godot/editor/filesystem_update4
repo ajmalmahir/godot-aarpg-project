@@ -1,3 +1,5 @@
 res://Player/player.tscn
 res://Player/Scripts/PlayerCamera.gd
 res://00_Globals/GlobalLevelManager.gd
+res://Tile Maps/grass-01.tscn
+res://Tile Maps/LevelTileMap.gd
