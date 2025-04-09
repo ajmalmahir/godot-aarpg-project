@@ -3,3 +3,7 @@ res://Player/Scripts/PlayerCamera.gd
 res://00_Globals/GlobalLevelManager.gd
 res://Tile Maps/grass-01.tscn
 res://Tile Maps/LevelTileMap.gd
+res://playground.tscn
+res://GeneralNodes/HitBox/hit_box.tscn
+res://GeneralNodes/HurtBox/hurt_box.tscn
+res://Props/Plants/Plant.tscn

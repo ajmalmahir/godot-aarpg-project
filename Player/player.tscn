@@ -478,7 +478,6 @@ _data = {
 }
 
 [node name="Player" type="CharacterBody2D"]
-position = Vector2(247, 152)
 collision_mask = 16
 motion_mode = 1
 wall_min_slide_angle = 0.174533
@@ -539,7 +538,6 @@ script = ExtResource("6_qiuv6")
 attack_sound = ExtResource("8_k3ir8")
 
 [node name="Camera2D" type="Camera2D" parent="."]
-editor_draw_limits = true
 script = ExtResource("11_nln51")
 
 [node name="Audio" type="Node" parent="."]
