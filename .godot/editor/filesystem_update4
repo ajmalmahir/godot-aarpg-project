@@ -7,3 +7,4 @@ res://playground.tscn
 res://GeneralNodes/HitBox/hit_box.tscn
 res://GeneralNodes/HurtBox/hurt_box.tscn
 res://Props/Plants/Plant.tscn
+res://Enemies/Slime/slime.tscn

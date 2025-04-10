@@ -1,23 +1,30 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1744824783
+::res://::1744828593
 icon.svg::CompressedTexture2D::533889105040272143::1739394891::1744824783::1::::<><>::
-playground.tscn::PackedScene::5529647320950742818::1742407556::0::1::::<><>::uid://pr3o6e84vd2g::::res://Player/player.tscn<>uid://ds7mb1ir1smrk::::res://Tile Maps/grass-01.tscn<>uid://cqpoq40s0g4o0::::res://Props/Plants/Plant.tscn
+playground.tscn::PackedScene::5529647320950742818::1744828581::0::1::::<><>::uid://pr3o6e84vd2g::::res://Player/player.tscn<>uid://ds7mb1ir1smrk::::res://Tile Maps/grass-01.tscn<>uid://cqpoq40s0g4o0::::res://Props/Plants/Plant.tscn
+::res://00_Globals/::1744827151
+GlobalLevelManager.gd::GDScript::-1::1744827151::0::1::::<>Node<>::
+::res://Enemies/::1744828593
+::res://Enemies/Scripts/::1744828136
+::res://Enemies/Slime/::1744828593
+Slime.png::CompressedTexture2D::1814981901137076233::1744828285::1744828593::1::::<><>::
+slime.tscn::PackedScene::6394394057002446315::1744828581::0::1::::<><>::
 ::res://GeneralNodes/::1741708757
-::res://GeneralNodes/HitBox/::1742407556
+::res://GeneralNodes/HitBox/::1744828581
 hit_box.gd::GDScript::-1::1741708239::0::1::::HitBox<>Area2D<>::
-hit_box.tscn::PackedScene::4832657554950815748::1742407556::0::1::::<><>::res://GeneralNodes/HitBox/hit_box.gd
-::res://GeneralNodes/HurtBox/::1742407556
+hit_box.tscn::PackedScene::4832657554950815748::1744828581::0::1::::<><>::res://GeneralNodes/HitBox/hit_box.gd
+::res://GeneralNodes/HurtBox/::1744828581
 hurt_box.gd::GDScript::-1::1741709021::0::1::::HurtBox<>Area2D<>::
-hurt_box.tscn::PackedScene::4864219431159334084::1742407556::0::1::::<><>::res://GeneralNodes/HurtBox/hurt_box.gd
-::res://Player/::1744825181
-player.tscn::PackedScene::1089653789243656128::1744825181::0::1::::<><>::res://Player/Scripts/player.gd<>uid://d13kbcqs2ewkp::::res://Player/Sprites/PlayerSprite02.png<>res://Player/Scripts/player_state_machine.gd<>uid://beut1xtmewitx::::res://Player/Sprites/Shadow.png<>uid://byxnd3v2w66av::::res://Player/Sprites/AttackSprite01.png<>res://Player/Scripts/state_idle.gd<>res://Player/Scripts/state_walk.gd<>res://Player/Scripts/state_attack.gd<>uid://bs1bog2angffq::::res://Player/Audio/SwordSwoosh.wav<>uid://cbki8o08flll1::::res://GeneralNodes/HurtBox/hurt_box.tscn<>res://Player/Scripts/PlayerInteractionsHost.gd<>res://Player/Scripts/PlayerCamera.gd
+hurt_box.tscn::PackedScene::4864219431159334084::1744828581::0::1::::<><>::res://GeneralNodes/HurtBox/hurt_box.gd
+::res://Player/::1744828581
+player.tscn::PackedScene::1089653789243656128::1744828581::0::1::::<><>::res://Player/Scripts/player.gd<>uid://d13kbcqs2ewkp::::res://Player/Sprites/PlayerSprite02.png<>res://Player/Scripts/player_state_machine.gd<>uid://beut1xtmewitx::::res://Player/Sprites/Shadow.png<>uid://byxnd3v2w66av::::res://Player/Sprites/AttackSprite01.png<>res://Player/Scripts/state_idle.gd<>res://Player/Scripts/state_walk.gd<>res://Player/Scripts/state_attack.gd<>uid://bs1bog2angffq::::res://Player/Audio/SwordSwoosh.wav<>uid://cbki8o08flll1::::res://GeneralNodes/HurtBox/hurt_box.tscn<>res://Player/Scripts/PlayerInteractionsHost.gd<>res://Player/Scripts/PlayerCamera.gd
 ::res://Player/Audio/::1744824783
 SwordSwoosh.wav::AudioStreamWAV::3703579765758107406::1740689170::1744824783::1::::<><>::
-::res://Player/Scripts/::1744825103
+::res://Player/Scripts/::1744827334
 player.gd::GDScript::-1::1742407547::0::1::::Player<>CharacterBody2D<>::
+PlayerCamera.gd::GDScript::-1::1744827334::0::1::::PlayerCamera<>Camera2D<>::
 PlayerInteractionsHost.gd::GDScript::-1::1741967228::0::1::::PlayerInteractionsHost<>Node2D<>::
 player_state_machine.gd::GDScript::-1::1740087226::0::1::::PlayerStateMachine<>Node<>::
-PlayerCamera.gd::GDScript::-1::1744825103::0::1::::PlayerCamera<>Camera2D<>::
 state.gd::GDScript::-1::1739995453::0::1::::State<>Node<>::
 state_attack.gd::GDScript::-1::1742405188::0::1::::State_Attack<>State<>::
 state_idle.gd::GDScript::-1::1741017897::0::1::::State_Idle<>State<>::
@@ -28,12 +35,13 @@ ExamplePlayerSprite.png::CompressedTexture2D::3495256903925694183::1739478606::1
 PlayerSprite02.png::CompressedTexture2D::9042583649121061067::1740689158::1744824783::1::::<><>::
 Shadow.png::CompressedTexture2D::2709664904770298477::1740689158::1744824783::1::::<><>::
 ::res://Props/::1741879434
-::res://Props/Plants/::1742407556
+::res://Props/Plants/::1744828581
 plant.gd::GDScript::-1::1741880131::0::1::::Plant<>Node2D<>::
-Plant.tscn::PackedScene::5927708705155606185::1742407556::0::1::::<><>::uid://jo6k5twyo1hh::::res://Props/Sprites/Props.png<>res://Props/Plants/plant.gd<>uid://ca38fto0j77gi::::res://GeneralNodes/HitBox/hit_box.tscn
+Plant.tscn::PackedScene::5927708705155606185::1744828581::0::1::::<><>::uid://jo6k5twyo1hh::::res://Props/Sprites/Props.png<>res://Props/Plants/plant.gd<>uid://ca38fto0j77gi::::res://GeneralNodes/HitBox/hit_box.tscn
 ::res://Props/Sprites/::1744824783
 Props.png::CompressedTexture2D::662502572097957837::1741879448::1744824783::1::::<><>::
-::res://Tile Maps/::1742407556
-grass-01.tscn::PackedScene::8489453093174309324::1742407556::0::1::::<><>::uid://db0yhayoiy88u::::res://Tile Maps/Sprites/Grass-01.png
+::res://Tile Maps/::1744828581
+grass-01.tscn::PackedScene::8489453093174309324::1744828581::0::1::::<><>::uid://db0yhayoiy88u::::res://Tile Maps/Sprites/Grass-01.png<>res://Tile Maps/LevelTileMap.gd
+LevelTileMap.gd::GDScript::-1::1744826146::0::1::::LevelTileMap<>TileMap<>::
 ::res://Tile Maps/Sprites/::1744824783
 Grass-01.png::CompressedTexture2D::7282530084675634554::1740429332::1744824783::1::::<><>::
