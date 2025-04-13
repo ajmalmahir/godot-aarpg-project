@@ -1,3 +1,4 @@
+AnimationPlayer
 CollisionShape2D
 Sprite2D
 CharacterBody2D
@@ -6,6 +7,5 @@ StaticBody2D
 Area2D
 AudioStreamPlayer2D
 Node
-AnimationPlayer
 Camera2D
 TileMap
