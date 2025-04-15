@@ -5,11 +5,11 @@ playground.tscn::PackedScene::5529647320950742818::1744830033::0::1::::<><>::uid
 ::res://00_Globals/::1744827151
 GlobalLevelManager.gd::GDScript::-1::1744827151::0::1::::<>Node<>::
 ::res://Enemies/::1744828593
-::res://Enemies/Scripts/::1745865448
-enemy.gd::GDScript::-1::1745865448::0::1::::Enemy<>CharacterBody2D<>::
-::res://Enemies/Slime/::1745865464
+::res://Enemies/Scripts/::1746555804
+enemy.gd::GDScript::-1::1746555804::0::1::::Enemy<>CharacterBody2D<>::
+::res://Enemies/Slime/::1746555830
 Slime.png::CompressedTexture2D::1814981901137076233::1744828285::1744828593::1::::<><>::
-slime.tscn::PackedScene::6394394057002446315::1745865464::0::1::::<><>::uid://beut1xtmewitx::::res://Player/Sprites/Shadow.png<>uid://04gqsw2t8ky0::::res://Enemies/Slime/Slime.png<>res://Enemies/Scripts/enemy.gd
+slime.tscn::PackedScene::6394394057002446315::1746555830::0::1::::<><>::uid://beut1xtmewitx::::res://Player/Sprites/Shadow.png<>uid://04gqsw2t8ky0::::res://Enemies/Slime/Slime.png<>res://Enemies/Scripts/enemy.gd
 ::res://GeneralNodes/::1741708757
 ::res://GeneralNodes/HitBox/::1744830033
 hit_box.gd::GDScript::-1::1741708239::0::1::::HitBox<>Area2D<>::

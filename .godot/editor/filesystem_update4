@@ -1,2 +1,3 @@
 res://Enemies/Slime/slime.tscn
 res://Enemies/Scripts/enemy.gd
+res://Enemies/Scripts/states/enemy_state.gd
