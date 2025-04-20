@@ -1,8 +1,9 @@
-[gd_scene load_steps=13 format=3 uid="uid://cxdq0axjf85nb"]
+[gd_scene load_steps=14 format=3 uid="uid://cxdq0axjf85nb"]
 
 [ext_resource type="Texture2D" uid="uid://beut1xtmewitx" path="res://Player/Sprites/Shadow.png" id="1_1xxeu"]
 [ext_resource type="Texture2D" uid="uid://04gqsw2t8ky0" path="res://Enemies/Slime/Slime.png" id="1_abe8g"]
 [ext_resource type="Script" path="res://Enemies/Scripts/enemy.gd" id="1_cvfoq"]
+[ext_resource type="Script" path="res://Enemies/Scripts/enemy_state_machine.gd" id="4_tuspi"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_77kln"]
 radius = 5.0
@@ -243,3 +244,6 @@ libraries = {
 "": SubResource("AnimationLibrary_gxh3b")
 }
 autoplay = "idle_down"
+
+[node name="EnemyStateMachine" type="Node" parent="."]
+script = ExtResource("4_tuspi")
