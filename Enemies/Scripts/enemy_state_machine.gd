@@ -8,7 +8,12 @@ func _ready() -> void:
 	process_mode = Node.PROCESS_MODE_DISABLED
 	pass
 
-func _process(delta: float) -> void:
+func _process( delta: float ) -> void:
+	change_state( current_state.process( delta ) )
+	pass
+
+func _physics_process( delta: float ) -> void:
+	change_state( current_state.physics( delta ) )
 	pass
 
 func initialize( _enemy : Enemy ) -> void:

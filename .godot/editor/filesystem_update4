@@ -2,3 +2,12 @@ res://Enemies/Slime/slime.tscn
 res://Enemies/Scripts/enemy.gd
 res://Enemies/Scripts/states/enemy_state.gd
 res://Enemies/Scripts/enemy_state_machine.gd
+res://00_Globals/global_level_manager.gd
+res://00_Globals/global_player_manager.gd
+res://Player/Scripts/player.gd
+res://Player/player.tscn
+res://playground.tscn
+res://Tile Maps/grass-01.tscn
+res://GeneralNodes/HitBox/hit_box.tscn
+res://GeneralNodes/HurtBox/hurt_box.tscn
+res://Props/Plants/Plant.tscn
