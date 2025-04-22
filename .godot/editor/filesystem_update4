@@ -11,3 +11,4 @@ res://Tile Maps/grass-01.tscn
 res://GeneralNodes/HitBox/hit_box.tscn
 res://GeneralNodes/HurtBox/hurt_box.tscn
 res://Props/Plants/Plant.tscn
+res://Enemies/Scripts/states/enemy_state_idle.gd
