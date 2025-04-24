@@ -1,10 +1,11 @@
-[gd_scene load_steps=15 format=3 uid="uid://cxdq0axjf85nb"]
+[gd_scene load_steps=16 format=3 uid="uid://cxdq0axjf85nb"]
 
 [ext_resource type="Texture2D" uid="uid://beut1xtmewitx" path="res://Player/Sprites/Shadow.png" id="1_1xxeu"]
 [ext_resource type="Texture2D" uid="uid://04gqsw2t8ky0" path="res://Enemies/Slime/Slime.png" id="1_abe8g"]
 [ext_resource type="Script" path="res://Enemies/Scripts/enemy.gd" id="1_cvfoq"]
 [ext_resource type="Script" path="res://Enemies/Scripts/enemy_state_machine.gd" id="4_tuspi"]
 [ext_resource type="Script" path="res://Enemies/Scripts/states/enemy_state_idle.gd" id="5_us0yt"]
+[ext_resource type="Script" path="res://Enemies/Scripts/states/enemy_state_wander.gd" id="6_cvv5w"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_77kln"]
 radius = 5.0
@@ -249,5 +250,11 @@ autoplay = "idle_down"
 [node name="EnemyStateMachine" type="Node" parent="."]
 script = ExtResource("4_tuspi")
 
-[node name="Idle" type="Node" parent="EnemyStateMachine"]
+[node name="Idle" type="Node" parent="EnemyStateMachine" node_paths=PackedStringArray("after_idle_state")]
 script = ExtResource("5_us0yt")
+after_idle_state = NodePath("../Wander")
+
+[node name="Wander" type="Node" parent="EnemyStateMachine" node_paths=PackedStringArray("next_state")]
+script = ExtResource("6_cvv5w")
+state_animation_duration = 0.7
+next_state = NodePath("../Idle")
