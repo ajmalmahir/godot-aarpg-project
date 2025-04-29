@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1746641952
+::res://::1746731533
 icon.svg::CompressedTexture2D::533889105040272143::1739394891::1744824783::1::::<><>::
 playground.tscn::PackedScene::5529647320950742818::1746641952::0::1::::<><>::uid://pr3o6e84vd2g::::res://Player/player.tscn<>uid://ds7mb1ir1smrk::::res://Tile Maps/grass-01.tscn<>uid://cqpoq40s0g4o0::::res://Props/Plants/Plant.tscn<>uid://cxdq0axjf85nb::::res://Enemies/Slime/slime.tscn
 ::res://00_Globals/::1746557426
@@ -13,12 +13,12 @@ enemy_state_machine.gd::GDScript::-1::1746557644::0::1::::EnemyStateMachine<>Nod
 enemy_state.gd::GDScript::-1::1746556448::0::1::::EnemyState<>Node<>::
 enemy_state_idle.gd::GDScript::-1::1746561049::0::1::::EnemyStateIdle<>EnemyState<>::
 enemy_state_wander.gd::GDScript::-1::1746641879::0::1::::EnemyStateWander<>EnemyState<>::
-::res://Enemies/Slime/::1746642352
+::res://Enemies/Slime/::1746644586
 DestroySmoke.png::CompressedTexture2D::3773190486690668927::1746642285::1746642361::1::::<><>::
 hit_00.wav::AudioStreamWAV::2435404350243226063::1746642293::1746642361::1::::<><>::
 hit_01.wav::AudioStreamWAV::1821962872015158255::1746642294::1746642361::1::::<><>::
 Slime.png::CompressedTexture2D::1814981901137076233::1744828285::1744828593::1::::<><>::
-slime.tscn::PackedScene::6394394057002446315::1746641963::0::1::::<><>::uid://beut1xtmewitx::::res://Player/Sprites/Shadow.png<>uid://04gqsw2t8ky0::::res://Enemies/Slime/Slime.png<>res://Enemies/Scripts/enemy.gd<>res://Enemies/Scripts/enemy_state_machine.gd<>res://Enemies/Scripts/states/enemy_state_idle.gd<>res://Enemies/Scripts/states/enemy_state_wander.gd
+slime.tscn::PackedScene::6394394057002446315::1746644586::0::1::::<><>::uid://beut1xtmewitx::::res://Player/Sprites/Shadow.png<>uid://04gqsw2t8ky0::::res://Enemies/Slime/Slime.png<>res://Enemies/Scripts/enemy.gd<>res://Enemies/Scripts/enemy_state_machine.gd<>res://Enemies/Scripts/states/enemy_state_idle.gd<>uid://07tpyovqc1kd::::res://Enemies/Slime/hit_01.wav<>res://Enemies/Scripts/states/enemy_state_wander.gd<>uid://cbki8o08flll1::::res://GeneralNodes/HurtBox/hurt_box.tscn
 ::res://GeneralNodes/::1741708757
 ::res://GeneralNodes/HitBox/::1746641952
 hit_box.gd::GDScript::-1::1741708239::0::1::::HitBox<>Area2D<>::

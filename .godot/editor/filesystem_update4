@@ -1,9 +1,3 @@
-res://Enemies/Scripts/states/enemy_state_idle.gd
-res://Enemies/Scripts/states/enemy_state_wander.gd
+res://Enemies/Scripts/states/enemy_state_stun.gd
+res://Enemies/Scripts/enemy.gd
 res://Enemies/Slime/slime.tscn
-res://playground.tscn
-res://Player/player.tscn
-res://Tile Maps/grass-01.tscn
-res://GeneralNodes/HitBox/hit_box.tscn
-res://GeneralNodes/HurtBox/hurt_box.tscn
-res://Props/Plants/Plant.tscn
