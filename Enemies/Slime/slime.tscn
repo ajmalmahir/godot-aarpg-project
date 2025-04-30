@@ -1,13 +1,15 @@
-[gd_scene load_steps=22 format=3 uid="uid://cxdq0axjf85nb"]
+[gd_scene load_steps=24 format=3 uid="uid://cxdq0axjf85nb"]
 
 [ext_resource type="Texture2D" uid="uid://beut1xtmewitx" path="res://Player/Sprites/Shadow.png" id="1_1xxeu"]
 [ext_resource type="Texture2D" uid="uid://04gqsw2t8ky0" path="res://Enemies/Slime/Slime.png" id="1_abe8g"]
 [ext_resource type="Script" path="res://Enemies/Scripts/enemy.gd" id="1_cvfoq"]
+[ext_resource type="PackedScene" uid="uid://ca38fto0j77gi" path="res://GeneralNodes/HitBox/hit_box.tscn" id="3_smrfg"]
 [ext_resource type="Script" path="res://Enemies/Scripts/enemy_state_machine.gd" id="4_tuspi"]
 [ext_resource type="Script" path="res://Enemies/Scripts/states/enemy_state_idle.gd" id="5_us0yt"]
 [ext_resource type="AudioStream" uid="uid://07tpyovqc1kd" path="res://Enemies/Slime/hit_01.wav" id="5_wsayt"]
 [ext_resource type="Script" path="res://Enemies/Scripts/states/enemy_state_wander.gd" id="6_cvv5w"]
 [ext_resource type="PackedScene" uid="uid://cbki8o08flll1" path="res://GeneralNodes/HurtBox/hurt_box.tscn" id="7_4lfe3"]
+[ext_resource type="Script" path="res://Enemies/Scripts/states/enemy_state_stun.gd" id="10_eq6uh"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_81uk4"]
 radius = 13.0
@@ -421,6 +423,13 @@ script = ExtResource("1_cvfoq")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="HurtBox"]
 position = Vector2(0, -7)
 shape = SubResource("CircleShape2D_81uk4")
+debug_color = Color(0.94902, 0.768627, 0, 0.419608)
+
+[node name="HitBox" parent="." instance=ExtResource("3_smrfg")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HitBox"]
+position = Vector2(0, -7)
+shape = SubResource("CircleShape2D_81uk4")
 debug_color = Color(0.999385, 0, 0.114796, 0.42)
 
 [node name="ShadowSprite2D" type="Sprite2D" parent="."]
@@ -455,7 +464,9 @@ wander_speed = 30.0
 state_animation_duration = 0.7
 next_state = NodePath("../Idle")
 
-[node name="Stun" type="Node" parent="EnemyStateMachine"]
+[node name="Stun" type="Node" parent="EnemyStateMachine" node_paths=PackedStringArray("next_state")]
+script = ExtResource("10_eq6uh")
+next_state = NodePath("../Idle")
 
 [node name="Destroy" type="Node" parent="EnemyStateMachine"]
 

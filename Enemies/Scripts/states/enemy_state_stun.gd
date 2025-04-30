@@ -22,6 +22,7 @@ func enter() -> void:
 	enemy.velocity = _direction * -knockback_speed
 
 	enemy.update_animation( anim_name )
+	enemy.animation_player.animation_finished.connect( _on_animation_finished )
 	pass
 	
 func exit() -> void:
@@ -38,3 +39,6 @@ func physics( _delta : float ) -> EnemyState:
 
 func _on_enemy_damaged() -> void:
 	state_machine.change_state( self )
+
+func _on_animation_finished( _a : String ) -> void:
+	_animation_finished = true
