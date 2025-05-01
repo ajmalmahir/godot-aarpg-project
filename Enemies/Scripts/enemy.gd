@@ -64,6 +64,8 @@ func anim_direction() -> String:
 		return "side"
 
 func _take_damage( damage : int ) -> void:
+	if invulnerable == true:
+		return
 	hp -= damage
 	enemy_damaged.emit()
 	pass

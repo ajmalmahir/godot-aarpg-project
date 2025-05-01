@@ -15,8 +15,10 @@ func init() -> void:
 	pass
 
 func enter() -> void:
+	enemy.invulnerable = true
 	_animation_finished = false
-	# _direction = enemy.DIR_4[ rand ]
+
+	_direction = enemy.global_position.direction_to( enemy.player.global_position )
 
 	enemy.set_direction( _direction )
 	enemy.velocity = _direction * -knockback_speed
@@ -26,6 +28,8 @@ func enter() -> void:
 	pass
 	
 func exit() -> void:
+	enemy.invulnerable = false
+	enemy.animation_player.animation_finished.disconnect( _on_animation_finished )
 	pass
 	
 func process( _delta : float ) -> EnemyState:
