@@ -1,4 +1,4 @@
-[gd_scene load_steps=32 format=3 uid="uid://pr3o6e84vd2g"]
+[gd_scene load_steps=34 format=3 uid="uid://pr3o6e84vd2g"]
 
 [ext_resource type="Script" path="res://Player/Scripts/player.gd" id="1_7qy7p"]
 [ext_resource type="Texture2D" uid="uid://d13kbcqs2ewkp" path="res://Player/Sprites/PlayerSprite02.png" id="2_j2o3l"]
@@ -12,6 +12,7 @@
 [ext_resource type="PackedScene" uid="uid://cbki8o08flll1" path="res://GeneralNodes/HurtBox/hurt_box.tscn" id="10_crgu7"]
 [ext_resource type="Script" path="res://Player/Scripts/PlayerInteractionsHost.gd" id="10_fpstk"]
 [ext_resource type="Script" path="res://Player/Scripts/PlayerCamera.gd" id="11_nln51"]
+[ext_resource type="PackedScene" uid="uid://ca38fto0j77gi" path="res://GeneralNodes/HitBox/hit_box.tscn" id="13_ke0gi"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_04nsg"]
 
@@ -477,6 +478,8 @@ _data = {
 "walk_up": SubResource("Animation_5kpwl")
 }
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_dv3d5"]
+
 [node name="Player" type="CharacterBody2D"]
 collision_mask = 16
 motion_mode = 1
@@ -547,3 +550,10 @@ max_polyphony = 4
 
 [node name="Interactions" type="Node2D" parent="."]
 script = ExtResource("10_fpstk")
+
+[node name="HitBox" parent="." instance=ExtResource("13_ke0gi")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HitBox"]
+position = Vector2(1, -15)
+shape = SubResource("CircleShape2D_dv3d5")
+debug_color = Color(1, 0.831373, 0, 0.419608)

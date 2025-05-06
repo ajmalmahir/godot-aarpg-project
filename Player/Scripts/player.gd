@@ -7,13 +7,20 @@ var direction : Vector2 = Vector2.ZERO
 @onready var animation_player : AnimationPlayer = $AnimationPlayer
 @onready var sprite: Sprite2D = $Sprite2D
 @onready var state_machine: PlayerStateMachine = $StateMachine
+@onready var hit_box = $HitBox
 
 signal DirectionChanged( new_direction: Vector2 )
+signal player_damaged( hurt_box : HurtBox )
+
+var invulnerable : bool = false
+var hp : int = 6
+var max_hp : int = 6
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	PlayerManager.player = self
 	state_machine.Initialize(self)
+	hit_box.damaged.connect( _take_damage )
 	pass # Replace with function body.
 
 
@@ -62,3 +69,12 @@ func AnimDirection() -> String:
 		return "up"
 	else:
 		return "side"
+
+func _take_damage( hurt_box : HurtBox ) -> void:
+	pass
+
+func update_hp( delta : int ) -> void:
+	pass
+
+func make_invulnerable() -> void:
+	pass
