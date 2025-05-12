@@ -5,6 +5,7 @@ const DIR_4 = [ Vector2.RIGHT, Vector2.DOWN, Vector2.LEFT, Vector2.UP ]
 var direction : Vector2 = Vector2.ZERO
 
 @onready var animation_player : AnimationPlayer = $AnimationPlayer
+@onready var effect_animation_player : AnimationPlayer = $EffectAnimationPlayer
 @onready var sprite: Sprite2D = $Sprite2D
 @onready var state_machine: PlayerStateMachine = $StateMachine
 @onready var hit_box = $HitBox
@@ -21,6 +22,7 @@ func _ready() -> void:
 	PlayerManager.player = self
 	state_machine.Initialize(self)
 	hit_box.damaged.connect( _take_damage )
+	update_hp(99)
 	pass # Replace with function body.
 
 
@@ -71,9 +73,18 @@ func AnimDirection() -> String:
 		return "side"
 
 func _take_damage( hurt_box : HurtBox ) -> void:
+	if invulnerable == true:
+		return
+	update_hp( -hurt_box.damage )
+	if hp > 0:
+		player_damaged.emit( hurt_box )
+	else:
+		player_damaged.emit( hurt_box )
+		update_hp( 99 )
 	pass
 
 func update_hp( delta : int ) -> void:
+	hp = clampi( hp + delta, 0, max_hp )
 	pass
 
 func make_invulnerable() -> void:
