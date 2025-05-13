@@ -9,3 +9,4 @@ res://GeneralNodes/HurtBox/hurt_box.tscn
 res://Props/Plants/Plant.tscn
 res://Enemies/Slime/slime.tscn
 res://Enemies/Scripts/states/enemy_state_destroy.gd
+res://Player/Scripts/state_stun.gd
