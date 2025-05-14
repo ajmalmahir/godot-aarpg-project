@@ -2,6 +2,7 @@ class_name State extends Node
 
 ## stores a reference to the player that this state belongs to
 static var player: Player
+static var state_machine : PlayerStateMachine
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -9,6 +10,9 @@ func _ready() -> void:
 
 ## What happens when the player enters this state?
 func Enter() -> void:
+	pass
+
+func init() -> void:
 	pass
 
 

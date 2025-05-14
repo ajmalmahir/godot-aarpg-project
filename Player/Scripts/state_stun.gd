@@ -1,4 +1,4 @@
-class_name State_Walk extends State
+class_name State_Stun extends State
 
 @export var knockback_speed : float = 200.0
 @export var decelerate_speed : float = 10.0

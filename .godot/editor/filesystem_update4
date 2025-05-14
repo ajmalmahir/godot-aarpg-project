@@ -10,3 +10,6 @@ res://Props/Plants/Plant.tscn
 res://Enemies/Slime/slime.tscn
 res://Enemies/Scripts/states/enemy_state_destroy.gd
 res://Player/Scripts/state_stun.gd
+res://Player/Scripts/state.gd
+res://Player/Scripts/player_state_machine.gd
+res://Player/Scripts/state_walk.gd
